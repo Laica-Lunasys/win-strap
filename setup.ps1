@@ -1,5 +1,5 @@
 $WindowsPrincipal = [Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()
-if (-Not($WindowsPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))){
+if (-Not($WindowsPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))) {
     Write-Output "Must be Administrator."
     Exit
 }
@@ -7,7 +7,7 @@ if (-Not($WindowsPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole] "Adm
 $Host.UI.RawUI.WindowTitle = ":: Install / Chocolatey"
 Write-Output $Host.UI.RawUI.WindowTitle
 .\chocolatey\init.ps1
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path", "User")
 
 $Host.UI.RawUI.WindowTitle = ":: Install / Applications"
 Write-Output $Host.UI.RawUI.WindowTitle
