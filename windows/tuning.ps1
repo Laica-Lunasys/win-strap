@@ -43,6 +43,14 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeli
 Write-Output "-> Disable Recommend Apps in Start"
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /v "SystemPaneSuggestionsEnabled" /t "REG_DWORD" /d "0" /f
 
+#=======================
+# Keyboard
+#=======================
+Write-Output "-> Disable Language HotKey (Change IME etc.)"
+reg add "HKEY_CURRENT_USER\Keyboard Layout\Toggle" /v "Hotkey" /t "REG_SZ" /d 3 /f
+reg add "HKEY_CURRENT_USER\Keyboard Layout\Toggle" /v "Language Hotkey" /t "REG_SZ" /d 3 /f
+reg add "HKEY_CURRENT_USER\Keyboard Layout\Toggle" /v "Layout Hotkey" /t "REG_SZ" /d 3 /f
+
 ## ===
 Write-Output ":: Restarting Explorer..."
 taskkill /f /im explorer.exe
