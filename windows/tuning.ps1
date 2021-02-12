@@ -51,6 +51,13 @@ reg add "HKEY_CURRENT_USER\Keyboard Layout\Toggle" /v "Hotkey" /t "REG_SZ" /d 3 
 reg add "HKEY_CURRENT_USER\Keyboard Layout\Toggle" /v "Language Hotkey" /t "REG_SZ" /d 3 /f
 reg add "HKEY_CURRENT_USER\Keyboard Layout\Toggle" /v "Layout Hotkey" /t "REG_SZ" /d 3 /f
 
+# ==================
+# Windows Update
+# ==================
+Write-Output "-> Disable Auto reboot after Scheduled Windows Update"
+reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v "AlwaysAutoRebootAtScheduledTime" /t "REG_DWORD" /d "0" /f
+reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU" /v "NoAutoRebootWithLoggedOnUsers" /t "REG_DWORD" /d "1" /f
+
 ## ===
 Write-Output ":: Restarting Explorer..."
 taskkill /f /im explorer.exe
