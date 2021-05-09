@@ -5,4 +5,4 @@ if (-Not($WindowsPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole] "Adm
 }
 
 # Install Optional Apps
-choco install -y vlc XnviewMP 7zip-zstd
+choco install -y vlc XnviewMP 7zip-zstd powertoys
