@@ -1,0 +1,71 @@
+; Copyright � Microsoft Corp.
+
+[Theme]
+; Windows - IDS_THEME_DISPLAYNAME_THEMEE
+DisplayName=Lunar
+ThemeId={985B73E0-2FFB-4F33-8351-D24C201251F8}
+
+; Computer - SHIDI_SERVER
+[CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\DefaultIcon]
+DefaultValue=%SystemRoot%\System32\imageres.dll,-109
+
+; UsersFiles - SHIDI_USERFILES
+[CLSID\{59031A47-3F72-44A7-89C5-5595FE6B30EE}\DefaultIcon]
+DefaultValue=%SystemRoot%\System32\imageres.dll,-123
+
+; Network - SHIDI_MYNETWORK
+[CLSID\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\DefaultIcon]
+DefaultValue=%SystemRoot%\System32\imageres.dll,-25
+
+; Recycle Bin - SHIDI_RECYCLERFULL SHIDI_RECYCLER
+[CLSID\{645FF040-5081-101B-9F08-00AA002F954E}\DefaultIcon]
+Full=%SystemRoot%\System32\imageres.dll,-54
+Empty=%SystemRoot%\System32\imageres.dll,-55
+
+[Control Panel\Cursors]
+AppStarting=%SystemRoot%\Cursors\aero_busy.ani
+Arrow=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\arrow_eoa.cur
+Crosshair=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\cross_eoa.cur
+Hand=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\link_eoa.cur
+Help=%SystemRoot%\Cursors\aero_helpsel.cur
+IBeam=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\ibeam_eoa.cur
+No=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\unavail_eoa.cur
+NWPen=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\pen_eoa.cur
+SizeAll=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\move_eoa.cur
+SizeNESW=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\nesw_eoa.cur
+SizeNS=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\ns_eoa.cur
+SizeNWSE=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\nwse_eoa.cur
+SizeWE=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\ew_eoa.cur
+UpArrow=%USERPROFILE%\AppData\Local\Microsoft\Windows\Cursors\up_eoa.cur
+Wait=%SystemRoot%\Cursors\aero_busy.ani
+DefaultValue=
+
+[Control Panel\Desktop]
+Wallpaper=N:\lowpoly.png
+Pattern=
+MultimonBackgrounds=0
+PicturePosition=4
+WallpaperWriteTime=132976540924141931
+
+[VisualStyles]
+Path=%SystemRoot%\resources\themes\Aero\Aero.msstyles
+ColorStyle=NormalColor
+Size=NormalSize
+AutoColorization=0
+ColorizationColor=0XC4000000
+SystemMode=Dark
+AppMode=Dark
+VisualStyleVersion=10
+
+[boot]
+SCRNSAVE.EXE=
+
+[MasterThemeSelector]
+MTSM=RJSPBS
+
+[Sounds]
+; IDS_SCHEME_DEFAULT
+SchemeName=Windows Default (modified)
+
+[AppEvents\Schemes\Apps\.Default\.Default]
+DefaultValue=%SystemRoot%\media\Windows Notify System Generic.wav
